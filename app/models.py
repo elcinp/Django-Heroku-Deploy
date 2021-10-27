@@ -32,4 +32,4 @@ class Todo(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
     
     def __str__(self):
-        return self.title + " " + self.user
+        return self.title + " " + str(self.user)
